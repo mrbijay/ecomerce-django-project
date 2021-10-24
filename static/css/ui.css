@@ -12,6 +12,13 @@ html {
 INCLUDE STYLES AND COMPONENTS
 ===================== */
 /* ================== HELPERS  =================== */
+.list-group-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: red !important;
+  border-color: red !important;
+  opacity: 0.8;
+}
 
 .dropdown-item:active {
   color: #fff;

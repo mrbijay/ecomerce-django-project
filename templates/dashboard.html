@@ -3,6 +3,7 @@
 {% block content %}
 <!-- ========================= SECTION CONTENT ========================= -->
 <section class="section-conten padding-y bg">
+    {% include 'alerts.html' %}
 
     <div class="container">
         <div class="row">
@@ -17,7 +18,7 @@
                 <a class="list-group-item" href="#"> Received orders </a>
             </ul>
             <br>
-            <a class="btn btn-light btn-block" href="#"> <i class="fa fa-power-off"></i> <span class="text">Log out</span> </a> 
+            <a class="btn btn-light btn-block" href="{% url 'logout' %}"> <i class="fa fa-power-off"></i> <span class="text">Log out</span> </a> 
             <!--   SIDEBAR .//END   -->
         </aside>
         <main class="col-md-9">
@@ -53,7 +54,7 @@
             <table class="table table-hover">
                 <tr>
                     <td width="65">
-                        <img src="../images/items/1.jpg" class="img-xs border">
+                        <img src="{% static '/images/items/1.jpg' %}" class="img-xs border">
                     </td>
                     <td> 
                         <p class="title mb-0">Product name goes here </p>
@@ -64,7 +65,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <img src="../images/items/2.jpg" class="img-xs border">
+                        <img src="{% static '/images/items/2.jpg' %}" class="img-xs border">
                     </td>
                     <td> 
                         <p class="title mb-0">Another name goes here </p>
@@ -75,7 +76,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <img src="../images/items/3.jpg" class="img-xs border">
+                        <img src="{% static '/images/items/3.jpg' %}" class="img-xs border">
                     </td>
                     <td> 
                         <p class="title mb-0">The name of the product  goes here </p>

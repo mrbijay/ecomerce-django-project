@@ -31,7 +31,13 @@
                 <a href="{{product.get_url}}" class="img-wrap"> <img src="{{ product.images.url }}"> </a>
                 <figcaption class="info-wrap">
                     <a href="{{product.get_url}}" class="title">{{product.product_name}}</a>
-                    <div class="price mt-1">NRP.{{product.price}}</div> <!-- price-wrap.// -->
+                    <del class="price-old text-center">NRP.{{product.old_price}}</del>
+                    <span class="price text-center">NRP.{{product.price}}</span> <!-- price-wrap.// -->
+                    <br>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <a href="{{product.get_url}}" class="btn btn-block btn-success">View Details </a>
                 </figcaption>
             </div>
         </div> <!-- col.// -->
